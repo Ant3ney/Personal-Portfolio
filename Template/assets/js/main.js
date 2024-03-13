@@ -120,6 +120,11 @@ Description: Gerold - Personal Portfolio HTML5 Template
 
     $grid.isotope({ filter: defaultFilter });
 
+    setTimeout(function () {
+      console.log("Click");
+      $(`[data-filter='.uxui']`).click();
+    }, 500);
+
     /*------------------------------------------------------
   	/  Portfolio Gallery Carousel
   	/------------------------------------------------------*/
