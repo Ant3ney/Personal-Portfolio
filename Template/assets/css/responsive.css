@@ -131,6 +131,9 @@
 		padding-top: 100px;
 		padding-bottom: 70px;
 	}
+	.blog-cta-section {
+		padding-bottom: 100px;
+	}
 	.blog-item .blog-content {
 		bottom: 10px;
 		width: calc(100% - 20px);
@@ -817,6 +820,18 @@
 	.blog-section {
 		padding-top: 60px;
 		padding-bottom: 30px;
+	}
+	.blog-cta-section {
+		padding-bottom: 60px;
+	}
+	.blog-cta-link {
+		padding: 28px 22px;
+	}
+	.blog-cta-title {
+		font-size: 30px;
+	}
+	.blog-cta-copy {
+		font-size: 16px;
 	}
 	.blog-item .blog-content {
 		bottom: 10px;

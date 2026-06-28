@@ -2151,6 +2151,101 @@ body.loaded {
 
 /*
 * ===============================
+*  START: Blog CTA Section
+* ===============================
+*/
+.blog-cta-section {
+  padding: 0 0 120px;
+  background: var(--tj-theme-accent-1);
+}
+.blog-cta-link {
+  display: grid;
+  gap: 16px;
+  padding: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(89, 165, 216, 0.26) 0%,
+      rgba(37, 74, 133, 0.78) 48%,
+      rgba(13, 6, 48, 0.94) 100%
+    ),
+    var(--tj-theme-accent-2);
+  color: var(--tj-white);
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition:
+    border-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+.blog-cta-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    260deg,
+    rgba(89, 165, 216, 0.24) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(37, 74, 133, 0.26) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.blog-cta-link:hover {
+  border-color: rgba(89, 165, 216, 0.55);
+  color: var(--tj-white);
+  transform: translateY(-3px);
+}
+.blog-cta-link:hover::before {
+  opacity: 1;
+}
+.blog-cta-kicker,
+.blog-cta-title,
+.blog-cta-copy,
+.blog-cta-action {
+  position: relative;
+  z-index: 1;
+}
+.blog-cta-kicker {
+  color: var(--tj-theme-primary);
+  font-size: 14px;
+  font-weight: var(--tj-fw-bold);
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.blog-cta-title {
+  color: var(--tj-white);
+  font-size: 40px;
+  font-weight: var(--tj-fw-bold);
+  line-height: 1.15;
+}
+.blog-cta-copy {
+  max-width: 760px;
+  color: var(--tj-body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+.blog-cta-action {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 12px;
+  color: var(--tj-white);
+  font-size: var(--tj-fz-btn);
+  font-weight: var(--tj-fw-bold);
+  line-height: 1;
+}
+.blog-cta-action i {
+  color: var(--tj-theme-primary);
+  font-size: 18px;
+}
+/* END: Blog CTA Section */
+
+/*
+* ===============================
 *  START: Blog Standard Page
 * ===============================
 */
